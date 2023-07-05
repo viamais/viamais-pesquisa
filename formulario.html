@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/plugins.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Grupo Viamais</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- iconify -->
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<img src="img/logo-viamais.svg" alt="Logo do grupo Viamais" />
+			</div>
+		</header>
+
+		<main class="form">
+			<div class="container">
+				<form class="step step-1">
+					<div class="main__header">
+						<div class="header__text">
+							<h1>INFORMAÇÕES BÁSICAS</h1>
+							<p>
+								Informações sobre seu turno e a quanto tempo você está conosco.
+							</p>
+						</div>
+						<img
+							src="img/img-form-ornament.svg
+						"
+							alt=""
+						/>
+					</div>
+					<div class="row">
+						<h2>Em qual turno você trabalha?</h2>
+						<!-- manha/tarde tarde/noite checkbox-->
+						<div class="input-group radio">
+							<input id="manha" name="turno" type="radio" />
+							<label for="manha">Manhã / tarde</label>
+						</div>
+						<div class="input-group radio">
+							<input id="tarde" name="turno" type="radio" />
+							<label for="tarde">Tarde / noite</label>
+						</div>
+					</div>
+					<div class="row">
+						<h2>Há quanto tempo você trabalha na Viamais?</h2>
+
+						<div class="input-group radio">
+							<input id="lifetime-3minus" name="lifetime" type="radio" />
+							<label for="lifetime-3minus">Menos de 3 meses</label>
+						</div>
+						<!-- de 3 meses a 1 ano -->
+						<div class="input-group radio">
+							<input id="lifetime-3m-12m" name="lifetime" type="radio" />
+							<label for="lifetime-3m-12m">De 3 meses a 1 ano</label>
+						</div>
+						<!-- de 1 a 2 anos -->
+						<div class="input-group radio">
+							<input id="lifetime-1y-2y" name="lifetime" type="radio" />
+							<label for="lifetime-1y-2y">De 1 a 2 anos</label>
+						</div>
+						<!-- de 2 a 5 anos -->
+						<div class="input-group radio">
+							<input id="lifetime-2y-5y" name="lifetime" type="radio" />
+							<label for="lifetime-2y-5y">De 2 a 5 anos</label>
+						</div>
+						<!-- de 5 a 10 anos -->
+						<div class="input-group radio">
+							<input id="lifetime-5y-10y" name="lifetime" type="radio" />
+							<label for="lifetime-5y-10y">De 5 a 10 anos</label>
+						</div>
+						<!-- mais de 10 anos -->
+						<div class="input-group radio">
+							<input id="lifetime-10yplus" name="lifetime" type="radio" />
+							<label for="lifetime-10yplus">Mais de 10 anos</label>
+						</div>
+					</div>
+					<div class="row">
+						<h2>Recomendaram o grupo Viamais para você?</h2>
+
+						<div class="input-group radio">
+							<input id="recomendaram-sim" name="recomendaram" type="radio" />
+							<label for="recomendaram-sim">Sim</label>
+						</div>
+						<div class="input-group radio">
+							<input id="recomendaram-nao" name="recomendaram" type="radio" />
+							<label for="recomendaram-nao">Não</label>
+						</div>
+					</div>
+					<div class="btn-group">
+						<a class="btn-outlined btn-prev" id="btn-prev">Voltar</a>
+						<a class="btn-primary btn-next" id="btn-next">Próximo</a>
+					</div>
+				</form>
+				<form class="step step-2">
+					<div class="main__header">
+						<div class="header__text">
+							<h1>SOBRE A EMPRESA</h1>
+							<p>Responda o que você acha em relação ao Grupo Viamais.</p>
+						</div>
+						<img
+							src="img/img-form-ornament.svg
+						"
+							alt=""
+						/>
+					</div>
+					<div class="row" id="pergunta-1">
+						<h2>1 - Estou satisfeito(a) com o Grupo Viamais?</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-1"
+								name="satisfeito-pergunta-1"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-1">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-1"
+								name="satisfeito-pergunta-1"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-1">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-1"
+								name="satisfeito-pergunta-1"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-1">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-1"
+								name="satisfeito-pergunta-1"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-1">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-1"
+								name="satisfeito-pergunta-1"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-1">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-2">
+						<h2>2 - Estou satisfeito(a) com a minha área/departamento?</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-2"
+								name="satisfeito-pergunta2"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-2">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-2"
+								name="satisfeito-pergunta2"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-2">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-2"
+								name="satisfeito-pergunta2"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-2">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-2"
+								name="satisfeito-pergunta2"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-2">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-2"
+								name="satisfeito-pergunta2"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-2">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-3">
+						<h2>3 - Considera o Grupo Viamais um bom lugar para trabalhar?</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-3"
+								name="satisfeito-pergunta-3"
+								type="radio"
+							/>
+							<label for="satisfeito-1">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-3"
+								name="satisfeito-pergunta-3"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-3">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-3"
+								name="satisfeito-pergunta-3"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-3">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-3"
+								name="satisfeito-pergunta-3"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-3">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-3"
+								name="satisfeito-pergunta-3"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-3">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-4">
+						<h2>4 - Considera que a comunicação interna da empresa é boa?</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-4"
+								name="satisfeito-pergunta-4"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-4">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-4"
+								name="satisfeito-pergunta-4"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-4">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-4"
+								name="satisfeito-pergunta-4"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-4">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-4"
+								name="satisfeito-pergunta-4"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-4">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5"
+								name="satisfeito-pergunta-4"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-4">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-5">
+						<h2>
+							5 - Os processos (o que eu tenho que fazer) da minha
+							área/departamento são claros e bem definidos para mim?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1"
+								name="satisfeito-pergunta-5"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-5">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2"
+								name="satisfeito-pergunta-5"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-5">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3"
+								name="satisfeito-pergunta-5"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-5">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4"
+								name="satisfeito-pergunta-5"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-5">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5"
+								name="satisfeito-pergunta-5"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-5">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-6">
+						<h2>
+							6 - Vejo possibilidade de crescimento profissional na empresa?
+						</h2>
+						<!--Sim, me vejo crescendo bem rápido na empresa, Sim, me vejo crescendo, mas no médio prazo, Não, não me vejo crescendo na empresa, concordo totalmente radio-->
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1"
+								name="satisfeito-pergunta-6"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-6">
+								Sim, me vejo crescendo bem rápido na empresa
+							</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2"
+								name="satisfeito-pergunta-6"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-6">
+								Sim, me vejo crescendo, mas no médio prazo
+							</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3"
+								name="satisfeito-pergunta-6"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-6">
+								Não, não me vejo crescendo na empresa
+							</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4"
+								name="satisfeito-pergunta-6"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-6">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-7">
+						<h2>
+							7 - As condições físicas de trabalho na empresa são satisfatórias
+							(ruído, temperatura, higiene, etc)?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-7"
+								name="satisfeito-pergunta-7"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-7">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-7"
+								name="satisfeito-pergunta-7"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-7">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-7"
+								name="satisfeito-pergunta-7"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-7">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-7"
+								name="satisfeito-pergunta-7"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-7">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-8">
+						<h2>
+							8 - A empresa proporciona ao funcionário equipamentos e
+							ferramentas adequadas para a perfeita realização de suas
+							atividades?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<h3>Computadores</h3>
+						<div class="sub-row">
+							<div class="input-group radio">
+								<input
+									id="satisfeito-1-pergunta-8-subitem-1"
+									name="satisfeito-pergunta-8-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-1-pergunta-8-subitem-1"
+									>Discordo totalmente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-2-pergunta-8-subitem-1"
+									name="satisfeito-pergunta-8-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-2-pergunta-8-subitem-1">Discordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-8-subitem-1"
+									name="satisfeito-pergunta-8-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-8-subitem-1"
+									>Indiferente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-4-pergunta-8-subitem-1"
+									name="satisfeito-pergunta-8-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-4-pergunta-8-subitem-1">Concordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-5-pergunta-8-subitem-1"
+									name="satisfeito-pergunta-8-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-5-pergunta-8-subitem-1"
+									>Concordo totalmente</label
+								>
+							</div>
+						</div>
+						<h3>Headsets</h3>
+						<div class="sub-row">
+							<div class="input-group radio">
+								<input
+									id="satisfeito-1-pergunta-8-subitem-2"
+									name="satisfeito-pergunta-8-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-1-pergunta-8-subitem-2"
+									>Discordo totalmente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-2-pergunta-8-subitem-2"
+									name="satisfeito-pergunta-8-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-2-pergunta-8-subitem-2">Discordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-8-subitem-2"
+									name="satisfeito-pergunta-8-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-8-subitem-2"
+									>Indiferente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-4-pergunta-8-subitem-2"
+									name="satisfeito-pergunta-8-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-4-pergunta-8-subitem-2">Concordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-5-pergunta-8-subitem-2"
+									name="satisfeito-pergunta-8-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-5-pergunta-8-subitem-2"
+									>Concordo totalmente</label
+								>
+							</div>
+						</div>
+						<h3>Cadeiras</h3>
+						<div class="sub-row">
+							<div class="input-group radio">
+								<input
+									id="satisfeito-1-pergunta-8-subitem-3"
+									name="satisfeito-pergunta-8-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-1-pergunta-8-subitem-3"
+									>Discordo totalmente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-8-subitem-3"
+									name="satisfeito-pergunta-8-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-8-subitem-3">Discordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-8-subitem-3"
+									name="satisfeito-pergunta-8-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-8-subitem-3"
+									>Indiferente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-4-pergunta-8-subitem-3"
+									name="satisfeito-pergunta-8-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-4-pergunta-8-subitem-3">Concordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-5-pergunta-8-subitem-3"
+									name="satisfeito-pergunta-8-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-5-pergunta-8-subitem-3"
+									>Concordo totalmente</label
+								>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="pergunta-9">
+						<h2>
+							9 - Você considera que suas habilidades profissionais têm sido
+							adequadamente aproveitadas?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-9"
+								name="satisfeito-pergunta-9"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-9">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-9"
+								name="satisfeito-pergunta-9"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-9">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-9"
+								name="satisfeito-pergunta-9"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-9">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-9"
+								name="satisfeito-pergunta-9"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-9">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-9"
+								name="satisfeito-pergunta-9"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-9">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-10">
+						<h2>
+							10 - Você considera que o treinamento que você recebe o capacita a
+							fazer bem o seu trabalho?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-10"
+								name="satisfeito-pergunta-10"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-10">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-10"
+								name="satisfeito-pergunta-10"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-10">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-10"
+								name="satisfeito-pergunta-10"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-10">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-10"
+								name="satisfeito-pergunta-10"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-10">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-10"
+								name="satisfeito-pergunta-10"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-10">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-11">
+						<h2>
+							11 - Sempre que precisa da prestação de serviço dessas áreas, você
+							se sente satisfeito? Dê uma nota de 1 a 5, onde 1 é muito
+							insatisfeito e 5 é muito satisfeito.
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<h3>Departamento Pessoal</h3>
+						<div class="sub-row">
+							<div class="input-group radio">
+								<input
+									id="satisfeito-1-pergunta-11-subitem-1"
+									name="satisfeito-pergunta-11-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-1-pergunta-11-subitem-1"
+									>Discordo totalmente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-2-pergunta-11-subitem-1"
+									name="satisfeito-pergunta-11-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-2-pergunta-11-subitem-1">Discordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-11-subitem-1"
+									name="satisfeito-pergunta-11-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-11-subitem-1"
+									>Indiferente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-4-pergunta-11-subitem-1"
+									name="satisfeito-pergunta-11-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-4-pergunta-11-subitem-1">Concordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-5-pergunta-11-subitem-1"
+									name="satisfeito-pergunta-11-subitem-1"
+									type="radio"
+								/>
+								<label for="satisfeito-5-pergunta-11-subitem-1"
+									>Concordo totalmente</label
+								>
+							</div>
+						</div>
+						<h3>Recursos humanos</h3>
+						<div class="sub-row">
+							<div class="input-group radio">
+								<input
+									id="satisfeito-1-pergunta-11-subitem-2"
+									name="satisfeito-pergunta-11-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-1-pergunta-11-subitem-2"
+									>Discordo totalmente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-2-pergunta-11-subitem-2"
+									name="satisfeito-pergunta-11-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-2-pergunta-11-subitem-2">Discordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-11-subitem-2"
+									name="satisfeito-pergunta-11-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-11-subitem-2"
+									>Indiferente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-4-pergunta-11-subitem-2"
+									name="satisfeito-pergunta-11-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-4-pergunta-11-subitem-2">Concordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-5-pergunta-11-subitem-2"
+									name="satisfeito-pergunta-11-subitem-2"
+									type="radio"
+								/>
+								<label for="satisfeito-5-pergunta-11-subitem-2"
+									>Concordo totalmente</label
+								>
+							</div>
+						</div>
+						<h3>Treinamento e Desenvolvimento de Pessoas</h3>
+						<div class="sub-row">
+							<div class="input-group radio">
+								<input
+									id="satisfeito-1-pergunta-11-subitem-3"
+									name="satisfeito-pergunta-11-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-1-pergunta-11-subitem-3"
+									>Discordo totalmente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-11-subitem-3"
+									name="satisfeito-pergunta-11-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-11-subitem-3">Discordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-3-pergunta-11-subitem-3"
+									name="satisfeito-pergunta-11-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-3-pergunta-11-subitem-3"
+									>Indiferente</label
+								>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-4-pergunta-11-subitem-3"
+									name="satisfeito-pergunta-11-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-4-pergunta-11-subitem-3">Concordo</label>
+							</div>
+							<div class="input-group radio">
+								<input
+									id="satisfeito-5-pergunta-11-subitem-3"
+									name="satisfeito-pergunta-11-subitem-3"
+									type="radio"
+								/>
+								<label for="satisfeito-5-pergunta-11-subitem-3"
+									>Concordo totalmente</label
+								>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="pergunta-12">
+						<h2>
+							12 - Sua remuneração está compatível com as tarefas realizadas e
+							com o mercado de trabalho?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-12"
+								name="satisfeito-pergunta-12"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-12">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-12"
+								name="satisfeito-pergunta-12"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-12">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-12"
+								name="satisfeito-pergunta-12"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-12">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-12"
+								name="satisfeito-pergunta-12"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-12">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-12"
+								name="satisfeito-pergunta-12"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-12">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="btn-group">
+						<a class="btn-outlined btn-prev" id="btn-prev">Voltar</a>
+						<a class="btn-primary btn-next" id="btn-next">Próximo</a>
+					</div>
+				</form>
+				<form class="step step-3">
+					<div class="main__header">
+						<div class="header__text">
+							<h1>SOBRE SEUS COLEGAS E DEPARTAMENTO</h1>
+							<p>Responda o que você acha do seu ambiente de trabalho.</p>
+						</div>
+						<img
+							src="img/img-form-ornament.svg
+						"
+							alt=""
+						/>
+					</div>
+					<div class="row" id="pergunta-13">
+						<h2>13 - Sou tratado(a) com respeito pelos meus colegas?</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-13"
+								name="satisfeito-pergunta-13"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-13">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-13"
+								name="satisfeito-pergunta-13"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-13">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-13"
+								name="satisfeito-pergunta-13"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-13">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-13"
+								name="satisfeito-pergunta-13"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-13">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-13"
+								name="satisfeito-pergunta-13"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-13">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-14">
+						<h2>14 - O clima de trabalho da minha equipe é bom?</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-14"
+								name="satisfeito-pergunta-14"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-14">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-14"
+								name="satisfeito-pergunta-14"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-14">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-14"
+								name="satisfeito-pergunta-14"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-14">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-14"
+								name="satisfeito-pergunta-14"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-14">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-14"
+								name="satisfeito-pergunta-14"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-14">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-15">
+						<h2>
+							15 - Conheço claramente os objetivos (ou metas) da minha área?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-15"
+								name="satisfeito-pergunta-15"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-15">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-15"
+								name="satisfeito-pergunta-15"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-15">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-15"
+								name="satisfeito-pergunta-15"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-15">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-15"
+								name="satisfeito-pergunta-15"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-15">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-15"
+								name="satisfeito-pergunta-15"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-15">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-16">
+						<h2>
+							16- No meu departamento, tenho o compromisso com a execução do meu
+							trabalho, sem que o meu líder precise estar sempre cobrando?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-16"
+								name="satisfeito-pergunta-16"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-16">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-16"
+								name="satisfeito-pergunta-16"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-16">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-16"
+								name="satisfeito-pergunta-16"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-16">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-16"
+								name="satisfeito-pergunta-16"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-16">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-16"
+								name="satisfeito-pergunta-16"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-16">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="btn-group">
+						<a class="btn-outlined btn-prev" id="btn-prev">Voltar</a>
+						<a class="btn-primary btn-next" id="btn-next">Próximo</a>
+					</div>
+				</form>
+				<form class="step step-4">
+					<div class="main__header">
+						<div class="header__text">
+							<h1>SOBRE OS LÍDERES</h1>
+							<p>
+								Responda o que você acha em relação aos líderes (para responder
+								pense no seu líder direto).
+							</p>
+						</div>
+						<img
+							src="img/img-form-ornament.svg
+						"
+							alt=""
+						/>
+					</div>
+					<div class="row" id="pergunta-17">
+						<h2>
+							17 - Os colaboradores são tratados com respeito pelos líderes,
+							independente dos seus cargos?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-17"
+								name="satisfeito-pergunta-17"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-17">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-17"
+								name="satisfeito-pergunta-17"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-17">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-17"
+								name="satisfeito-pergunta-17"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-17">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-17"
+								name="satisfeito-pergunta-17"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-17">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-18">
+						<h2>
+							18 - Existe reconhecimento por parte do seu líder para o trabalho
+							bem feito pelo colaborador?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-18"
+								name="satisfeito-pergunta-18"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-18">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-18"
+								name="satisfeito-pergunta-18"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-18">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-18"
+								name="satisfeito-pergunta-18"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-18">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-18"
+								name="satisfeito-pergunta-18"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-18">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-19">
+						<h2>
+							19 - Seu líder é receptivo à sugestões de melhoria e/ou mudança?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-19"
+								name="satisfeito-pergunta-19"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-19">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-19"
+								name="satisfeito-pergunta-19"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-19">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-19"
+								name="satisfeito-pergunta-19"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-19">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-19"
+								name="satisfeito-pergunta-19"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-19">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-20">
+						<h2>
+							20 - Você tem uma ideia clara do resultado que o seu líder espera
+							do seu trabalho através de feedbacks?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-20"
+								name="satisfeito-pergunta-20"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-20">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-20"
+								name="satisfeito-pergunta-20"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-20">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-20"
+								name="satisfeito-pergunta-20"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-20">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-20"
+								name="satisfeito-pergunta-20"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-20">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-21">
+						<h2>
+							21 - O seu líder tem interesse no bem-estar dos funcionários?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-21"
+								name="satisfeito-pergunta-21"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-21">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-21"
+								name="satisfeito-pergunta-21"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-21">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-21"
+								name="satisfeito-pergunta-21"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-21">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-21"
+								name="satisfeito-pergunta-21"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-21">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-22">
+						<h2>
+							22 - Seu líder transmite entusiasmo e motivação para que você
+							realize seu trabalho?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-22"
+								name="satisfeito-pergunta-22"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-22">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-22"
+								name="satisfeito-pergunta-22"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-22">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-22"
+								name="satisfeito-pergunta-22"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-22">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-22"
+								name="satisfeito-pergunta-22"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-22">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-23">
+						<h2>
+							23 - Seu líder atende suas dúvidas e oferece suporte em relação à
+							execução do seu trabalho?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-23"
+								name="satisfeito-pergunta-23"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-23">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-23"
+								name="satisfeito-pergunta-23"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-23">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-23"
+								name="satisfeito-pergunta-23"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-23">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-23"
+								name="satisfeito-pergunta-23"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-23">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-24">
+						<h2>
+							24 - Em relação ao gerente da sua área, sente segurança e
+							confiança no trabalho que ele desempenha?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-24"
+								name="satisfeito-pergunta-24"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-24">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-24"
+								name="satisfeito-pergunta-24"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-24">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-24"
+								name="satisfeito-pergunta-24"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-24">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-24"
+								name="satisfeito-pergunta-24"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-24">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-25">
+						<h2>
+							25 - Em relação ao coordenador da sua área (caso tenha), sente
+							segurança e confiança no trabalho que ele desempenha?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-25"
+								name="satisfeito-pergunta-25"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-25">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-25"
+								name="satisfeito-pergunta-25"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-25">Discordo</label>
+						</div>
+
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-25"
+								name="satisfeito-pergunta-25"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-25">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-25"
+								name="satisfeito-pergunta-25"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-25">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="btn-group">
+						<a class="btn-outlined btn-prev" id="btn-prev">Voltar</a>
+						<a class="btn-primary btn-next" id="btn-next">Próximo</a>
+					</div>
+				</form>
+				<form class="step step-5">
+					<div class="main__header">
+						<div class="header__text">
+							<h1>SOBRE VOCÊ</h1>
+							<p>Agora nos responda sobre você.</p>
+						</div>
+						<img
+							src="img/img-form-ornament.svg
+						"
+							alt=""
+						/>
+					</div>
+					<div class="row" id="pergunta-26">
+						<h2>
+							26 - O seu trabalho te dá um sentimento de realização
+							profissional?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-26"
+								name="satisfeito-pergunta-26"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-26">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-26"
+								name="satisfeito-pergunta-26"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-26">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-26"
+								name="satisfeito-pergunta-26"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-26">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-26"
+								name="satisfeito-pergunta-26"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-26">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-26"
+								name="satisfeito-pergunta-26"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-26">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-27">
+						<h2>
+							27 - Você considera que é sua responsabilidade contribuir para o
+							sucesso da empresa?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-27"
+								name="satisfeito-pergunta-27"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-27">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-27"
+								name="satisfeito-pergunta-27"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-27">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-27"
+								name="satisfeito-pergunta-27"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-27">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-27"
+								name="satisfeito-pergunta-27"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-27">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-27"
+								name="satisfeito-pergunta-27"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-27">Concordo totalmente</label>
+						</div>
+					</div>
+					<div class="row" id="pergunta-28">
+						<h2>
+							29 - Você sente que a empresa te inspira a ser o melhor no que faz
+							e também ter progresso no desenvolvimento da sua atividade?
+						</h2>
+						<!--Discordo totalmente, discordo, indiferente, concordo, concordo totalmente radio-->
+						<div class="input-group radio">
+							<input
+								id="satisfeito-1-pergunta-28"
+								name="satisfeito-pergunta-28"
+								type="radio"
+							/>
+							<label for="satisfeito-1-pergunta-28">Discordo totalmente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-2-pergunta-28"
+								name="satisfeito-pergunta-28"
+								type="radio"
+							/>
+							<label for="satisfeito-2-pergunta-28">Discordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-3-pergunta-28"
+								name="satisfeito-pergunta-28"
+								type="radio"
+							/>
+							<label for="satisfeito-3-pergunta-28">Indiferente</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-4-pergunta-28"
+								name="satisfeito-pergunta-28"
+								type="radio"
+							/>
+							<label for="satisfeito-4-pergunta-28">Concordo</label>
+						</div>
+						<div class="input-group radio">
+							<input
+								id="satisfeito-5-pergunta-28"
+								name="satisfeito-pergunta-28"
+								type="radio"
+							/>
+							<label for="satisfeito-5-pergunta-28">Concordo totalmente</label>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<a class="btn-outlined btn-prev" id="btn-prev">Voltar</a>
+						<a class="btn-primary btn-next" id="btn-next">Próximo</a>
+					</div>
+				</form>
+				<form class="step step-6">
+					<div class="main__header">
+						<div class="header__text">
+							<h1>CONTE-NOS MAIS</h1>
+							<p>
+								Analise todas as suas respostas e comente se há algo que faltou
+								ser abordado.
+							</p>
+						</div>
+						<img
+							src="img/img-form-ornament.svg
+						"
+							alt=""
+						/>
+					</div>
+					<div class="row" id="pergunta-29">
+						<h2>
+							29 - Caso tenha algo que queira compartilhar e não foi abordado,
+							escreva abaixo.
+						</h2>
+						<textarea name="message">Escreva aqui...</textarea>
+					</div>
+
+					<div class="btn-group">
+						<a class="btn-outlined btn-prev" id="btn-prev">Voltar</a>
+						<a class="btn-primary" id="btn-send">Enviar</a>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<div class="modal">
+			<div class="modal__content">
+				<div class="modal__header">
+					<h2>Enviar respostas?</h2>
+					<p>
+						Você não poderá editar suas respostas depois que confirmar o envio.
+						Deseja enviar?
+					</p>
+				</div>
+				<div class="modal__footer">
+					<a class="btn-ghost" id="btn-close">Voltar</a>
+					<a class="btn-primary-tiny" id="send-modal">Enviar</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function () {
+				$('#btn-send').click(function (e) {
+					e.preventDefault();
+					$('.modal').addClass('active');
+				});
+				$('#btn-close').click(function (e) {
+					e.preventDefault();
+					$('.modal').removeClass('active');
+				});
+				var currentStep = 1;
+				var totalSteps = 6;
+
+				$('.step').not('.step-1').hide();
+
+				$('.btn-next').click(function (e) {
+					e.preventDefault();
+					if (currentStep < totalSteps) {
+						$('.step-' + currentStep).hide();
+						currentStep++;
+						$('.step-' + currentStep).show();
+						$('html, body').scrollTop(0);
+					}
+				});
+
+				$('.btn-prev').click(function (e) {
+					e.preventDefault();
+					if (currentStep > 1) {
+						$('.step-' + currentStep).hide();
+						currentStep--;
+						$('.step-' + currentStep).show();
+						$('html, body').scrollTop(0);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
